@@ -7,7 +7,7 @@ using namespace std;
 
 class Newcar {
 public:
-	string Name;
+	string Name; // attributes
 	string OwnerName;
 	int speed;
 	list<string>colorofcar;
@@ -19,27 +19,27 @@ public:
 		speed = 0;
 
 	}
+	void getinfo() { // class method
+		cout << " Name : " << Name << endl;
+		cout << " OwnerName :" << OwnerName << endl;
+		cout << " Speed of the car :" << speed << endl;
+		for (string car : colorofcar) {
+			cout << car << endl;
+		}
+	}
 };
 
 int main()
 {
 
-	Newcar cardetails("Audi","Loos");
+	Newcar cardetails("Audi","Loos"); // create object using constructor 
 	Newcar cardetails1("Tata", "Ops");
 	cardetails.colorofcar.push_back("my first cons");
 	cardetails.colorofcar.push_back("my second cons");
 
 	
-
-	cout << " Name : " << cardetails.Name << endl;
-	cout << " OwnerName :" << cardetails.OwnerName << endl;
-	cout << " Speed of the car :" << cardetails.speed << endl;
-	for (string car : cardetails.colorofcar) {
-		cout << car << endl;
-	}
-	cout << " Name : " << cardetails1.Name << endl;
-	cout << " OwnerName :" << cardetails1.OwnerName << endl;
-	cout << " Speed of the car :" << cardetails1.speed << endl;
+	cardetails.getinfo();
+	cardetails1.getinfo();
 
 
 
