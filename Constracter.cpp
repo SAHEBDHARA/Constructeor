@@ -13,6 +13,7 @@ public:
 	list<string>colorofcar;
 
 	Newcar(string name, string owner) { // constructor
+										//A constructor is a special type of member function that is called automatically when an object is created.
 		Name = name;
 		OwnerName = owner;
 		speed = 0;
@@ -25,6 +26,9 @@ int main()
 
 	Newcar cardetails("Audi","Loos");
 	Newcar cardetails1("Tata", "Ops");
+	cardetails.colorofcar.push_back("my first cons");
+	cardetails.colorofcar.push_back("my second cons");
+
 	
 
 	cout << " Name : " << cardetails.Name << endl;
