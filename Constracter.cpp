@@ -1,5 +1,5 @@
 // OOP class and object.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//za
 
 #include <iostream>
 #include<list>
