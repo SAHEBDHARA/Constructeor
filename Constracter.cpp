@@ -12,7 +12,7 @@ public:
 	list<string>colorofcar;
 
 	Newcar(string name, string owner) { // constructor
-										//A constructor is a special type of member function that is called automatically when an object is created.
+//A constructor is a special type of member function that is called automatically when an object is created.
 		Name = name;
 		OwnerName = owner;
 		speed = 0;
